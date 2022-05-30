@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css"
+          media="screen" charset="utf-8">
+  </head>
+  <body class="page">
+    <header class="header"><img class="header__img"  alt="header" src="./eisenhower-matrix.jpg"><a class="header__link"
+        href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></header>
+    <main class="to-do">
+      <section class="to-do__add"><label for="new-task" class="to-do__title-add">Add Item</label>
+        <div class="to-do__add-task"><input id="new-task" class="task to-do__input" type="text">
+            <button class="btn btn__add">Add</button></div>
+      </section>
+      <section class="to-do__item">
+        <h3 class="to-do__title">Todo</h3>
+        <ul class="to-do__list to-do__incomplete-tasks">
+          <li class="to-do__list-tem"><input class="select to-do__list-tem_center" type="checkbox"><label class="task to-do__label to-do__list-tem_center">Pay Bills</label>
+              <input type="text" class="task to-do__list-tem_center to-do__list-item-input"><button class="btn btn__edit to-do__list-tem_center">Edit</button>
+              <button class="btn btn__delete to-do__list-tem_center"><img alt="remove" class="to-do__remove-img to-do__list-tem_center" src="./remove.svg"></button></li>
+          <li class="to-do__list-tem edit-mode"><input class="select to-do__list-tem_center" type="checkbox"><label class="task to-do__label to-do_label-edit  to-do__list-tem_center">Go Shopping</label>
+              <input type="text" value="Go Shopping" class="task to-do__list-item-input to-do__list-item-edit"><button class="btn btn__edit to-do__list-tem_center">Save</button>
+              <button class="btn btn__delete to-do__list-tem_center"><img class="to-do__remove-img to-do__list-tem_center" alt="remove" src="./remove.svg"></button></li>
+        </ul>
+      </section>
+      <section class="to-do__item">
+        <h3 class="to-do__title">Completed</h3>
+        <ul class="to-do__list to-do__completed-tasks">
+          <li class="to-do__list-tem"><input class="select to-do__list-tem_center" type="checkbox" checked><label class="task to-do__label to-do_label-complete to-do__list-tem_center">See the Doctor</label>
+            <input type="text" class="task to-do__list-item-input to-do__list-tem_center"><button class="btn btn__edit to-do__list-tem_center">Edit</button>
+            <button class="btn btn__delete to-do__list-tem_center"><img alt="remove" src="./remove.svg" class="to-do__remove-img to-do__list-tem_center"></button></li>
+        </ul>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
